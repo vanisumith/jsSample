@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript"> 
+
+function add(){ 
+	var a = prompt("Enter first value");
+	var b = prompt("Enter second value");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+
+function check(){ 
+	var a = document.getElementById("firstval").value;
+	var b = document.getElementById("secondval").value;
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+</script>
+<title>My WebApp</title>
+</head>
+<body>
+	<input type="text" value="" id="firstval" > 
+	<input type="text" value="" id="secondval" > 
+	<input type="button" value="CallAdd" onclick="check()" > 
+</body>
+</html>
